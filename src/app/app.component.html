@@ -1,6 +1,9 @@
+<mat-toolbar color="primary">
+  <span class="toolbar-text">Total Experience Calculator</span>
+</mat-toolbar>
 <div class="exp-container">
   <form [formGroup]="expForm">
-    <div formArrayName="experiences">
+    <div formArrayName="experiences" class="form-container">
       <div
         *ngFor="let experience of experiences.controls; let i = index"
         [formGroupName]="i"
