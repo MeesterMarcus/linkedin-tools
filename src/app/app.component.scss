@@ -1,0 +1,29 @@
+.exp-container {
+  margin: 1em;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.exp-input-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.total-exp-card {
+  padding: 15px;
+  margin: 15px;
+  width: 400px;
+  font-size: 24px;
+  text-align: center;
+}
