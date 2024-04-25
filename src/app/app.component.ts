@@ -1,9 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import {
+  FormArray,
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -15,7 +22,7 @@ import { CommonModule } from '@angular/common';
     MatButtonModule,
     ReactiveFormsModule,
     CommonModule,
-    MatCardModule
+    MatCardModule,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
@@ -26,7 +33,7 @@ export class AppComponent implements OnInit {
 
   constructor(private fb: FormBuilder) {
     this.expForm = this.fb.group({
-      experiences: this.fb.array([])
+      experiences: this.fb.array([]),
     });
   }
 
@@ -42,11 +49,11 @@ export class AppComponent implements OnInit {
 
   addExperienceInput() {
     const newExperience = new FormGroup({
-        yrsInput: new FormControl(null),
-        monthsInput: new FormControl(null, [Validators.max(11)]),
+      yrsInput: new FormControl(null),
+      monthsInput: new FormControl(null, [Validators.max(11)]),
     });
     this.experiences.push(newExperience);
-}
+  }
 
   calcTotalExperience() {
     let totalYears = 0;
@@ -59,7 +66,6 @@ export class AppComponent implements OnInit {
     // Convert excess months to years
     totalYears += Math.floor(totalMonths / 12);
     totalMonths %= 12;
-    this.totalExpText = `${totalYears} years and ${totalMonths} months`
-    console.log(this.totalExpText);
+    this.totalExpText = `${totalYears} years and ${totalMonths} months`;
   }
 }
