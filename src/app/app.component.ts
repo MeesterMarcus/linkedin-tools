@@ -42,8 +42,8 @@ export class AppComponent implements OnInit {
 
   addExperienceInput() {
     const newExperience = new FormGroup({
-        yrsInput: new FormControl(0),
-        monthsInput: new FormControl(0, [Validators.max(11)]),
+        yrsInput: new FormControl(null),
+        monthsInput: new FormControl(null, [Validators.max(11)]),
     });
     this.experiences.push(newExperience);
 }
