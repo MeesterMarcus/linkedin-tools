@@ -1,5 +1,6 @@
 .exp-container {
   margin: 1em;
+  width: 400px;
 }
 
 .form-container {
@@ -17,12 +18,13 @@
 .btn-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   gap: 15px;
 }
 
 .total-exp-card {
   padding: 15px;
-  margin: 15px;
+  margin-top: 15px;
   width: 400px;
   font-size: 24px;
   text-align: center;

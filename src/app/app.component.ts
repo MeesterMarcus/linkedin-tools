@@ -31,7 +31,9 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.addExperienceInput(); // Initialize with one input group
+    for (let i = 0; i < 4; i++) {
+      this.addExperienceInput(); // Initialize with some inputs
+    }
   }
 
   get experiences(): FormArray {

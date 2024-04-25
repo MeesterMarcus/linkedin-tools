@@ -40,5 +40,7 @@
     </button>
   </div>
 
-  <mat-card class="total-exp-card">{{ totalExpText }}</mat-card>
+  @if (totalExpText) {
+    <mat-card class="total-exp-card">{{ totalExpText }}</mat-card>
+  }
 </div>
