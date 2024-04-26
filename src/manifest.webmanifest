@@ -2,7 +2,7 @@
   "name": "LinkedInTools",
   "short_name": "LinkedInTools",
   "theme_color": "#673ab7",
-  "background_color": "#fafafa",
+  "background_color": "#673ab7",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
