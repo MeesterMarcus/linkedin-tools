@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1714153674963,
+  "timestamp": 1714154426311,
   "index": "/linkedin-tools/index.html",
   "assetGroups": [
     {
@@ -57,7 +57,7 @@
     "/linkedin-tools/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
     "/linkedin-tools/index.html": "831effb099338aaced81025a6723b99bc19b864b",
     "/linkedin-tools/main-5SAQSRYP.js": "1211501ad95d24a0d41b9fee50cf212e7e07ecc2",
-    "/linkedin-tools/manifest.webmanifest": "9c41c0d8b8bb6b55c6edc49b5cfe7a34a285560e",
+    "/linkedin-tools/manifest.webmanifest": "90a97d3c5c298c06172968588952f4c371107cdf",
     "/linkedin-tools/polyfills-RT5I6R6G.js": "fe9f024576f21ff6314cf8f8332cde58b9a12416",
     "/linkedin-tools/styles-RSAQMOR5.css": "571732b9816b033684ccda6c5cd61da22fd3b43d"
   },
