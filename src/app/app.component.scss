@@ -1,12 +1,9 @@
 .exp-container {
   margin: 1em auto;
   padding: 1em;
-  /* Ensure padding is applied evenly */
   width: 100%;
   max-width: 400px;
-  /* Limits max width while allowing full width on smaller screens */
   box-sizing: border-box;
-  /* Includes padding and border in the element's total width and height */
 }
 
 .toolbar-text {
@@ -22,21 +19,33 @@
 .exp-input-container {
   display: flex;
   flex-direction: row;
-  /* Keep inputs side by side */
+  align-items: center;
+  /* Ensure vertical center alignment */
   justify-content: space-between;
   /* Distribute space evenly */
   gap: 10px;
 }
 
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* Add pointer on hover over the icon */
+}
+
+.icon-style {
+  cursor: pointer;
+  color: red;
+  margin-bottom: 10px;
+}
+
 .btn-container {
   display: flex;
   flex-direction: column;
-  /* Stack buttons vertically for better accessibility on mobile */
   align-items: center;
-  /* Center-align buttons to handle narrower screens */
   gap: 10px;
   margin-top: 1em;
-  /* Provide some top margin for better spacing */
 }
 
 .total-exp-card {
@@ -45,19 +54,17 @@
   width: 100%;
   max-width: 400px;
   font-size: 20px;
-  /* Slightly reduce the font size on mobile for better fit */
   text-align: center;
 }
 
-button[mat-raised-button], .my-button-class { /* Target buttons or use a class */
-  width: 250px; /* Adjust width as needed */
+button[mat-raised-button],
+.my-button-class {
+  width: 250px;
 }
-
 
 @media (min-width: 600px) {
   .exp-container {
     padding: 0.5em;
-    /* Reduce padding on larger screens if desired */
   }
 
   .btn-container {
@@ -67,6 +74,5 @@ button[mat-raised-button], .my-button-class { /* Target buttons or use a class *
 
   .total-exp-card {
     font-size: 24px;
-    /* Return to original font size for larger devices */
   }
 }

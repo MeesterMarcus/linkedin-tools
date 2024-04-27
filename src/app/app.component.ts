@@ -13,6 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +25,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     ReactiveFormsModule,
     CommonModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
@@ -56,6 +58,10 @@ export class AppComponent implements OnInit {
     });
     this.experiences.push(newExperience);
   }
+
+  removeExperience(index: number) {
+    this.experiences.removeAt(index); // Use removeAt to delete the FormGroup at the specified index
+}
 
   calcTotalExperience() {
     let totalYears = 0;
